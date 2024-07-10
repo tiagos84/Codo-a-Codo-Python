@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anti-Recursada</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-popup.css">
+  <link rel="icon" type="image/ico" href="img/anti-recursada.ico">
+  <script src="https://kit.fontawesome.com/21016c86a5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div>
+    <nav>
+      <ul style="position: fixed; padding: 0px 0px 0px 20px;">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Clases</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#donde">¿Donde estamos?</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+
+  <section id="inicio">
+    
+    <div id="fly-in">
+      <div><span>Bienvenidos a</span>UNA FUERZA ESPECIAL</div>
+      <div>Bienvenidos a<span>UN GRUPO ESPECIAL</span></div>
+      <div>Brindamos nuestra ayuda en<span>Historia</span></div>
+      <div><span>Y también te salvamos de</span>Matemáticas</div>
+      <div><span>Que no cunda el panico...</span>También en ciencias</div>
+      <div>¿Problemas con lenguajes?<span>Te ayudamos !</span></div>
+      <div>Llegaste al lugar correcto para evitar<span>RECURSAR</span></div>
+      <div><span>Somos los...</span>ANTI-RECURSADA</div>
+    </div>
+
+  </section>
+
+  <section id="servicios">
+
+    <h2>Nuestras clases</h2>
+
+    <div class="servicios-grid">
+
+      <div class="container">
+
+        <!--CLASES DE MATEMATICA-->
+        <div class="card">
+
+          <div class="face face1">
+
+            <div class="content">
+              <i class="fa-solid fa-square-root-variable"></i>
+              <h3>Clase de matemáticas</h3>
+            </div>
+
+          </div>
+
+          <div class="face face2">
+
+            <div class="content">
+              <p>Brindamos clases de apoyo en matemáticas para todos los niveles educativos.</p>
+              <a href="javascript:void(0);" onclick="abrirPopup('matematica')">Quiero más información.</a>
+            </div>
+
+          </div>
+
+        </div>
+        
+        <!--CLASES DE CIENCIAS-->
+        <div class="card">
+
+          <div class="face face1">
+
+            <div class="content">
+              <i class="fa-solid fa-atom"></i>
+              <h3>Clases de Ciencias</h3>
+            </div>
+            
+          </div>
+
+          <div class="face face2">
+
+            <div class="content">
+              <p>Ofrecemos clases de apoyo en diversas áreas de las ciencias, como biología, química y física.</p>
+              <a href="javascript:void(0);" onclick="abrirPopup('ciencias')">Quiero más información.</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--CLASES DE IDIOMAS-->
+        <div class="card">
+
+          <div class="face face1">
+
+            <div class="content">
+              <i class="fa-solid fa-language"></i>
+              <h3>Clases de Idiomas</h3>
+            </div>
+
+          </div>
+
+          <div class="face face2">
+
+            <div class="content">
+              <p>Impartimos clases de inglés para estudiantes de todos los niveles, desde principiantes hasta avanzados.
+              </p>
+              <a href="javascript:void(0);" onclick="abrirPopup('idiomas')">Quiero más información.</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--CLASES DE HISTORIA-->
+        <div class="card">
+
+          <div class="face face1">
+
+            <div class="content">
+              <i class="fa-solid fa-landmark"></i>
+              <h3>Clases de Historia</h3>
+            </div>
+
+          </div>
+
+          <div class="face face2">
+            <div class="content">
+              <p>Brindamos clases de apoyo en historia para todos los niveles educativos.</p>
+              <a href="javascript:void(0);" onclick="abrirPopup('historia')">Quiero más información.</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--A PARTIR DE ACA ESTAN LOS POPUPS-->
+        <div id="popUp-matematica" class="popup-fondo" onclick="cerrarPopup('matematica')" style="display:none;">
+          <div class="popup"
+            style="
+            background-color: #504d4dd7; text-align: left;">
+
+            <h2>Clases de matemáticas:</h2>
+            <ul>  
+              <li>Lunes: Álgebra (18hs a 20hs), Analísis matemático (16hs a 18hs).</li>
+              <li>Martes: Analísis matemático (18hs a 20hs).</li>
+              <li>Miércoles: Geometría (18hs a 20hs), Álgebra (16hs a 18hs).</li>
+              <li>Jueves: Matemática discreta (16hs a 18hs), Geometría (18hs a 20hs).</li>
+              <li>Viernes: Practicas de parciales (16hs a 20hs).</li>
+            </ul>
+            <a href="javascript:void(0);" onclick="cerrarPopup('matematica')" style="color:white;">Cerrar</a>
+          </div>
+
+        </div>
+
+        <div id="popUp-ciencias" class="popup-fondo" onclick="cerrarPopup('ciencias')" style="display:none">
+          <div class="popup" style="
+          background-color: #504d4dd7; text-align: left;">
+
+            <h2>Clases de física y química por niveles:</h2>
+            <ul>
+              <li>Lunes: Física (12hs a 14hs), Química (14hs a 16hs).</li>
+              <li>Martes: Física (12hs a 16hs).</li>
+              <li>Miércoles: Física (12hs a 14hs), Química (14hs a 16hs).</li>
+              <li>Jueves: Química (14hs a 16hs).</li>
+              <li>Viernes: Practicas de parciales (12hs a 16hs).</li>
+            </ul>
+            <a href="javascript:void(0);" onclick="cerrarPopup('ciencias')" style="color:white;">Cerrar</a>
+          </div>
+
+        </div>
+
+        <div id="popUp-idiomas" class="popup-fondo" onclick="cerrarPopup('idiomas')" style="display:none;">
+
+          <div class="popup" style="
+          background-color: #504d4dd7; text-align: left;">
+            <h2>Clases de ingles y japones por niveles:</h2>
+            <ul>
+              <li>Lunes: Inglés avanzado (8hs a 10hs), Japonés principiante (10hs a 12hs).</li>
+              <li>Martes: Inglés intermedio (12hs a 16hs).</li>
+              <li>Miércoles: Inglés principiante (8hs a 10hs), Japonés intermedio (10hs a 12hs).</li>
+              <li>Jueves: Japonés avanzado (8hs a 12hs).</li>
+              <li>Viernes: Practicas de parciales (8hs a 12hs).</li>
+            </ul>
+            <a href="javascript:void(0);" onclick="cerrarPopup('idiomas')" style="color:white;">Cerrar</a>
+          </div>
+
+        </div>
+
+        <div id="popUp-historia" class="popup-fondo" onclick="cerrarPopup('historia')" style="display:none;">
+          <div class="popup" style="
+          background-color: #504d4dd7; text-align: left;">
+            <h2>Clases de historia antigua y moderna por niveles:</h2>
+            <ul>
+              <li>Lunes: Historia antigua (12hs a 14hs), Historia moderna (14hs a 16hs).</li>
+              <li>Martes: Historia moderna (12hs a 16hs).</li>
+              <li>Miércoles: Historia moderna (12hs a 14hs), Historia antigua (14hs a 16hs).</li>
+              <li>Jueves: Historia antigua (14hs a 16hs).</li>
+              <li>Viernes: Practicas de parciales (12hs a 16hs).</li>
+            </ul>
+            <a href="javascript:void(0);" onclick="cerrarPopup('historia')" style="color:white;">Cerrar</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>¡Bienvenidos a Grupo Especial "Los Anti-Recursada", tu aliado en el camino hacia el éxito académico! Desde 2012,
+      nos hemos comprometido a brindar un apoyo integral a estudiantes de todos los niveles en la Capital Federal de
+      Argentina. Nos especializamos en ofrecer clases de apoyo en una variedad de materias clave, incluyendo
+      matemáticas, ciencias (física/química), inglés, historia y muchas otras.
+
+      Nuestra misión es proporcionar a cada estudiante las herramientas y el acompañamiento necesarios para alcanzar su
+      máximo potencial académico. Contamos con un equipo de docentes altamente calificados y apasionados, quienes están
+      dedicados a inspirar, motivar y guiar a nuestros estudiantes en su viaje educativo.
+
+      Entendemos que cada estudiante es único, por lo que adaptamos nuestras metodologías de enseñanza para satisfacer
+      las necesidades individuales de cada uno. Ya sea que necesites ayuda para comprender conceptos difíciles,
+      prepararte para exámenes importantes o simplemente desees fortalecer tus habilidades académicas, estamos aquí para
+      ayudarte a alcanzar tus metas.
+
+      Únete a nuestra comunidad de aprendizaje y descubre el poder de la excelencia académica con Grupo Especial "Los
+      Anti-Recursada". ¡Estamos aquí para impulsarte hacia el éxito!</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form id="contactForm" action="#" method="POST"
+      style="
+      background-image: url(https://c.wallhere.com/photos/5e/8e/Batman_The_Batman_2022_dark_DC_Comics_black_background_dark_silhouette_digital_art_Batman_logo-2096213.jpg!d);">
+      <p>Construi tu armadura estudiando con nosotros y evita recursar.</p>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="materia">Materia de interés:</label>
+      <select id="materia" name="materia" required>
+        <option value="">Seleccione una materia</option>
+        <option value="Matemáticas">Matemáticas</option>
+        <option value="Ciencias">Física</option>
+        <option value="Ciencias">Química</option>
+        <option value="Idiomas">Japonés</option>
+        <option value="Idiomas">Inglés</option>
+        <option value="Historia">Historia</option>
+      </select>
+
+      <label>Nivel educativo:</label>
+
+      <label><input type="radio" id="primaria" name="nivel" value="Primaria" required>Primaria</label>
+      <label><input type="radio" id="secundaria" name="nivel" value="Secundaria">Secundaria</label>
+      <label><input type="radio" id="terciario" name="nivel" value="Terciario">Terciario</label>
+      <label><input type="radio" id="universidad" name="nivel" value="Universidad">Universidad</label>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <section id="donde">
+    <h2>¿Donde estamos?</h2>
+
+    <div class="redes-margin">
+
+      <div id="ubicacion-left">
+        <iframe id="mapa" style="border-radius: 20px; width: 100%; border:0;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52510.464315275356!2d-58.60007055136718!3d-34.657126799999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f63396ae49%3A0xb292a958b7730381!2sCodo%20a%20codo%20y%20centro%20de%20formacion%20profecional!5e0!3m2!1ses-419!2sar!4v1716077350682!5m2!1ses-419!2sar"
+          height="450" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="redes-margin" style="display: flex; flex-direction: column;">
+        <h1>Medios de transporte con los cuales llegar:</h1>
+        <ul style="text-align: left; font-size: medium;">
+          <li>Colectivos: 21, 22, 101, 275, π.</li>
+          <li>Trenes: SAN MARTIN, Y EL OTRO.</li>
+          <li>Helicoptero: Estacionar al lado del avión invisible de la mujer maravilla.</li>
+          <li>Batimovil: Pedir el número de Batman en recepción.</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Grupo especial los Anti-Recursada - Todos los derechos reservados</p>
+    <a class="fa-brands fa-facebook iconos-redes" style="color: #fafafa; margin: 5px; text-decoration: none;" href="https://www.facebook.com/?locale=es_LA" target="_blank"></a>
+    <a class="fa-brands fa-whatsapp  iconos-redes" style="color: #fafafa; margin: 5px; text-decoration: none;" href="https://www.whatsapp.com/?lang=es_LA" target="_blank"></a>
+  </footer>
+
+  <script src="script/script.js"></script>
+  <script src="script/popup.js"></script>
+    
+</body>
+
+</html>
